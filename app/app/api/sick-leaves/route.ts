@@ -1,4 +1,11 @@
 
+interface SickLeave {
+  id: string;
+  startDate: Date;
+  endDate: Date;
+  status: string;
+}
+
 import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../../../lib/auth'
